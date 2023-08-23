@@ -10,8 +10,8 @@ import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
 
 @Service
-public class ServiceSms {
-    Logger logger = LoggerFactory.getLogger(ServiceSms.class);
+public class SmsService {
+    Logger logger = LoggerFactory.getLogger(SmsService.class);
 
     @Value("${twilio.sid}")
     private String twilioSid;
@@ -33,7 +33,6 @@ public class ServiceSms {
 
         Message message = Message.creator(to, from, msg).create();
 
-        logger.info("Message: " + msg + " send...");
-        logger.info(message.getSid());
+        logger.info("Message: " + message.getBody() + " send...");
     }
 }
