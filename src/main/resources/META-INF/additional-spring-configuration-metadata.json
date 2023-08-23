@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "twilio.sid",
+    "type": "java.lang.String",
+    "description": "twilio.sid"
+  },
+  {
+    "name": "twilio.phone.to",
+    "type": "java.lang.String",
+    "description": "twilio.phone.to"
+  },
+  {
+    "name": "twilio.key",
+    "type": "java.lang.String",
+    "description": "twilio.key"
+  },
+  {
+    "name": "twilio.phone.from",
+    "type": "java.lang.String",
+    "description": "twilio.phone.from"
+  },
+  {
+    "name": "spring.artemis.queue",
+    "type": "java.lang.String",
+    "description": "Queue of the broker."
+  }
+]}
